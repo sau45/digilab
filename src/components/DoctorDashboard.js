@@ -21,7 +21,7 @@ const DoctorDashboard = () => {
                 animate={{ y: 0 }}
                 transition={{ duration: 2.4 }}
 
-                className='bg-doctor-dashboard-custom-background-color rounded-3xl flex items-center justify-center flex-col p-4 gap-4'>
+                className='bg-doctor-dashboard-custom-background-color rounded-3xl flex items-center justify-center flex-col p-4 gap-4 '>
 
                 <div className='flex flex-col items-center justify-center p-4'>
 

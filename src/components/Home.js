@@ -72,7 +72,7 @@ const Home = () => {
         initial={{ x: 12000 }}
         animate={{ x: 0 }}
         transition={{ duration: 1.5 }}
-        className='bg-my-custom-color flex flex-col xl:flex-row items-center gap-12 xl:gap-8 p-4 w-full min-w-96 md:p-12 rounded-3xl'>
+        className='bg-my-custom-color flex flex-col xl:flex-row items-center   p-4 w-full min-w-96 md:pt-12 rounded-3xl'>
         <div className='flex w-full items-center flex-col gap-8 '>
           <Header />
 
