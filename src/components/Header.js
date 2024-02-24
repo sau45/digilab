@@ -57,7 +57,7 @@ const Header = () => {
 
                     <div className='w-12 flex items-center justify-center bg-cyan-500 rounded-2xl h-12'>
 
-                        <Image src={notification} alt='notification' />
+                        <Image src={notification} alt='notification' width={""}  />
                     </div>
                 </div>
             </div>

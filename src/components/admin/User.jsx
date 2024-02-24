@@ -20,7 +20,7 @@ function User() {
 
   return (
     <div className="flex flex-col  items-center gap-2 min-w-[50vw] p-8 rounded-md ">
-      <h1 className="text-3xl font-semibold">All Users</h1>
+      <h1 className="text-3xl font-semibold"> Users data</h1>
       {users.length !== 0 ?<div className="flex flex-col justify-start text-xl">
         {users.map((user, i) => (
           <div className="flex gap-2 tracking-wide" key={user._id}>

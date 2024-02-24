@@ -39,11 +39,12 @@ function Navbar() {
                 >
                     <Link
                         href="/"
-                        className="bg-red-500  md:block hover:bg-transparent px-4 py-1 rounded-xl flex gap-2 items-center text-white text-lg font-medium"
+                        className="bg-blue-500  md:block hover:bg-transparent px-4 py-1 rounded-md flex gap-2 items-center text-white text-lg font-medium"
                     >
                         Home
                     </Link>
-                    {updates.length !== 0 ? <Image src={updates[0].logo} alt="" width={100} height={100} className="" /> : <div>Loading...</div>}
+                   
+                    {updates.length !== 0 ? <Image src={updates[0].logo} alt="pic-1"width={100} height={100} className="rounded-full w-16 h-11" /> : <div>Loading...</div>}
                 </div>
 
               
@@ -58,13 +59,13 @@ function Navbar() {
 
                         <Link
                             href="/userform"
-                            className="bg-[#5e8ce8] hover:bg-transparent px-4 py-1 rounded-xl flex gap-2 items-center text-white text-lg font-medium"
+                            className="bg-blue-400  hover:bg-transparent px-4 py-1 rounded-xl flex gap-2 items-center text-white text-lg font-medium"
                         >
                             Email
                         </Link>
                         <Link
                             href="/admin"
-                            className="bg-red-500 hover:bg-transparent px-4 py-1 rounded-xl flex gap-2 items-center text-white text-lg font-medium"
+                            className="bg-blue-400  hover:bg-transparent px-4 py-1 rounded-xl flex gap-2 items-center text-white text-lg font-medium"
                         >
                             Admin
                         </Link>

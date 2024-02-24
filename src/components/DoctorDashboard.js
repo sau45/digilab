@@ -26,8 +26,8 @@ const DoctorDashboard = () => {
                 <div className='flex flex-col items-center justify-center p-4'>
 
                     <div className='flex relative justify-center items-center w-20'>
-                        <Image className='w-89%' src={aliamcolter} />
-                        <Image className='absolute w-14 border border-black rounded-full bg-blue-300' src={aliamprofile} />
+                        <Image className='w-89%' src={aliamcolter} alt="pic-1" width={""}  />
+                        <Image className='absolute w-14 border border-black rounded-full bg-blue-300' src={aliamprofile} alt="pic-1"  width={""} />
 
                     </div>
                     <p>Aliam Colter</p>
@@ -39,10 +39,10 @@ const DoctorDashboard = () => {
 
                     <div className='flex relative w-24 items-center'>
 
-                        <Image src={activepatient1} />
-                        <Image className="absolute left-4" src={activepatient2} />
-                        <Image className='absolute left-10' src={activepatient3} />
-                        <Image className='absolute left-14' src={activepatient4} />
+                        <Image src={activepatient1} alt="pic-1"  width={""} />
+                        <Image className="absolute left-4" src={activepatient2} alt="pic-1"  width={""} />
+                        <Image className='absolute left-10' src={activepatient3} alt="pic-1"  width={""} />
+                        <Image className='absolute left-14' src={activepatient4} alt="pic-1" width={""}  />
                     </div>
                 </div>
 
@@ -58,7 +58,7 @@ const DoctorDashboard = () => {
 
                             <div className='flex gap-24 items-center justify-between'>
                                 <div className='flex items-center gap-2'>
-                                    <Image src={activepatient1} />
+                                    <Image src={activepatient1} alt="pic-1"  width={""} />
                                     <div>
                                         <p>Alexa Max</p>
                                         <p className='text-[9px] text-gray-400'>Active 5 min ago</p>
@@ -69,7 +69,7 @@ const DoctorDashboard = () => {
                             </div>
                             <div className='min-w-60 bg-black mt-4 border border-my-custom-color'></div>
                             <div className='flex items-center p-4 gap-4'>
-                                <Image src={activepatient1} />
+                                <Image src={activepatient1} alt="pic-1"  width={""} />
 
                                 <div className='flex flex-col gap-2'>
 
@@ -91,7 +91,7 @@ const DoctorDashboard = () => {
                                         <p className='text-right text-[10px]'>Tue 02:32pm</p>
                                     </div>
                                 </div>
-                                <Image className='w-10' src={aliamprofile} />
+                                <Image className='w-10' src={aliamprofile} alt="pic-1"  width={""} />
                             </div>
 
 

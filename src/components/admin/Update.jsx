@@ -73,8 +73,8 @@ function Update() {
   return (
     <div className="flex flex-col items-center gap-16  min-w-[50vw] p-8 rounded-md">
       <div className="flex flex-col gap-4  w-full ">
-        <h1 className="text-5xl font-semibold text-center">Update Section</h1>
-        <h1 className="text-3xl font-medium text-center">Existing Data</h1>
+        <h1 className="text-5xl font-semibold text-center text-blue-300 ">Update Segment</h1>
+        <h1 className="text-3xl font-medium text-center">Already Existing Data</h1>
         {updates.length !== 0 ? (
           <div className="">
             {updates?.map((up) => (
@@ -83,7 +83,7 @@ function Update() {
                   Logo Image:
                   <Image
                     src={up.logo}
-                    alt=""
+                    alt="pic-1"
                     width={100}
                     height={100}
                     className=""
@@ -103,7 +103,7 @@ function Update() {
       </div>
       {/* Update Form */}
       <div className="flex flex-col justify-start gap-4 border-white border p-4 rounded-lg">
-        <h1 className="text-3xl text-center font-medium">UI Update Form</h1>
+        <h1 className="text-3xl text-center font-medium text-blue-300 ">UI Update Form</h1>
         <form onSubmit={onSubmitBtnHandler}>
           <div className="flex flex-col gap-2">
             <div className="flex gap-4">

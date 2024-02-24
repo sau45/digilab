@@ -72,25 +72,25 @@ const Home = () => {
         <div className='flex flex-col gap-20'>
 
           <div className='flex items-center justify-center relative'>
-          {updates.length !== 0 ? <Image src={updates[0].logo} alt="" width={100} height={100} className="" /> :  <Image src={fire} alt="fire" />}
+          {updates.length !== 0 ? <Image src={updates[0].logo} alt="profile" width={100} height={100} className="rounded-full w-16 h-11" /> :  <Image src={fire} alt="fire" />}
            
-            <Image className='absolute top-4' src={firecircle} alt='firecircle' />
+            <Image className='absolute top-4' src={firecircle} alt='firecircle'  width={""} />
 
           </div>
           <div className='flex flex-col gap-10 '>
-            <Image src={home} alt="home" />
-            <Image src={book} alt="book" />
-            <Image src={piechart} alt="piechart" />
-            <Image src={chats} alt="chats" />
-            <Image src={setting} alt="setting" />
+            <Image src={home} alt="home"  width={""} />
+            <Image src={book} alt="book"  width={""} />
+            <Image src={piechart} alt="piechart"  width={""} />
+            <Image src={chats} alt="chats"  width={""} />
+            <Image src={setting} alt="setting"  width={""} />
             <FaEdit  onClick={()=>handleEditButton} className='text-red-600 hover:cursor-pointer'/>
 
           </div>
         </div>
         <div className='flex flex-col items-center gap-4'>
-          <Link href="/adminpannel"> <Image src={profile} alt='profile' /></Link>
+          <Link href="/adminpannel"> <Image src={profile} alt='profile' width={""}  /></Link>
          
-          <Image src={logout} alt='logout' />
+          <Image src={logout} alt='logout'  width={""} />
         </div>
       </motion.div>
       {/* //////main-container///////// */}
@@ -125,7 +125,7 @@ const Home = () => {
                   </div>
 
                   <div className='h-24 w-12 flex flex-col items-center justify-center bg-blue-500 p-4 rounded-3xl'>
-                    <Image src={arrow} alt="arrow" />
+                    <Image src={arrow} alt="arrow"  width={""} />
                     <p className=''>
                       70%
                     </p>
@@ -149,7 +149,7 @@ const Home = () => {
 
                   <div className='flex items-center justify-center gap-4'>
                     <div className='border border-white rounded-full p-1'>
-                      <Image className='w-16 h-16' src={activepatient3} alt='activepatient' />
+                      <Image className='w-16 h-16' src={activepatient3} alt='activepatient'  width={""}  />
                     </div>
                     <div className='flex flex-col items-center'>
 
@@ -176,18 +176,18 @@ const Home = () => {
 
                 <div className='flex items-center gap-2 justify-center w-24 border border-blue-500 rounded-3xl h-11'>
                   <p>Weekly</p>
-                  <Image src={dropdown} alt='dropdown' />
+                  <Image src={dropdown} alt='dropdown'  width={""}  />
                 </div>
               </div>
               <div className='flex items-center justify-center relative'>
-                <Image src={vectorline} alt='vectorline' />
-                <Image className="absolute" src={vector} alt='vector' />
+                <Image src={vectorline} alt='vectorline'  width={""}  />
+                <Image className="absolute" src={vector} alt='vector' width={""}  />
                 <div className='absolute top-0'>
-                  <Image src={rectangle} alt='rectangle' />
+                  <Image src={rectangle} alt='rectangle'  width={""}  />
                   <div className='flex absolute gap-1 item-center justify-center top-1 left-3'>
 
                     <p>82%</p>
-                    <Image src={arrow} alt='arrow' />
+                    <Image src={arrow} alt='arrow'  width={""} />
                   </div>
                 </div>
               </div>
@@ -250,17 +250,17 @@ const Home = () => {
                     </div>
                     <div className='flex relative w-24 items-center'>
 
-                      <Image src={activepatient1} />
-                      <Image className="absolute left-4" src={activepatient2} />
-                      <Image className='absolute left-10' src={activepatient3} />
-                      <Image className='absolute left-14' src={activepatient4} />
+                      <Image src={activepatient1} alt="pic-1" />
+                      <Image className="absolute left-4" alt="pic-1"  src={activepatient2}  width={""} />
+                      <Image className='absolute left-10' alt="pic-1" src={activepatient3}  width={""} />
+                      <Image className='absolute left-14' alt="pic-1" src={activepatient4}  width={""} />
                     </div>
 
                   </div>
                   <div className='flex flex-col items-center justify-between'>
 
                     <div className='flex justify-center items-center h-16 w-16 bg-custom-notification-background-color rounded-3xl'>
-                      <Image className='text-blue-400' src={notification} alt='notification' />
+                      <Image className='text-blue-400' src={notification} alt='notification' width={""}  />
                     </div>
 
                     <div className='w-16 h-12 flex items-center justify-center bg-blue-400 rounded-2xl'>
@@ -279,13 +279,13 @@ const Home = () => {
 
                     <div className='flex gap-4 bg-custom-dark-background-color items-center p-1 rounded-lg justify-center'>
                       <p>82%</p>
-                      <Image src={arrow} />
+                      <Image src={arrow} alt="pic-1"  width={""} />
                     </div>
                   </div>
                   <div className='flex flex-col gap-4'>
 
                     <CiMenuKebab className='transform rotate-90 ml-16 text-2xl text-black' />
-                    <Image className='border border-white rounded-full' src={ellipse} alt='ellipse' />
+                    <Image className='border border-white rounded-full' width={""} src={ellipse} alt='ellipse' />
                   </div>
                 </div>
               </div>
