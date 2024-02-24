@@ -31,14 +31,36 @@ import data from '@/components/activepatient'
 import DoctorDashboard from './DoctorDashboard';
 import Header from './Header';
 import { motion } from 'framer-motion';
+import { FaEdit } from "react-icons/fa";
+import { useRouter } from 'next/router';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+
+import axios from 'axios';
 
 
 
 const Home = () => {
 
+  const [updates, setUpdates] = useState([]);
+
+  // Fetch all users
+  useEffect(() => {
+      const fetchUpdatess = async () => {
+          try {
+              const { data } = await axios.get("/api/updates");
+              setUpdates(data.updates || []);
+          } catch (error) {
+              console.error("Error fetching users:", error);
+          }
+      };
+      fetchUpdatess();
+  }, []);
+ 
+
 
   return (
-    <div className='flex p-4 '>
+    <div className='flex pt-24 pr-4 pb-4 '>
       {/* //////navigation////// */}
       <motion.div
 
@@ -50,7 +72,8 @@ const Home = () => {
         <div className='flex flex-col gap-20'>
 
           <div className='flex items-center justify-center relative'>
-            <Image src={fire} alt="fire" />
+          {updates.length !== 0 ? <Image src={updates[0].logo} alt="" width={100} height={100} className="" /> :  <Image src={fire} alt="fire" />}
+           
             <Image className='absolute top-4' src={firecircle} alt='firecircle' />
 
           </div>
@@ -60,10 +83,13 @@ const Home = () => {
             <Image src={piechart} alt="piechart" />
             <Image src={chats} alt="chats" />
             <Image src={setting} alt="setting" />
+            <FaEdit  onClick={()=>handleEditButton} className='text-red-600 hover:cursor-pointer'/>
+
           </div>
         </div>
         <div className='flex flex-col items-center gap-4'>
-          <Image src={profile} alt='profile' />
+          <Link href="/adminpannel"> <Image src={profile} alt='profile' /></Link>
+         
           <Image src={logout} alt='logout' />
         </div>
       </motion.div>
