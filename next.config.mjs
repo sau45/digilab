@@ -14,7 +14,7 @@ const nextConfig = {
         source: "/api/:path*",
         destination: isLocal
           ? "http://localhost:5050/api/:path*"
-          : "https://digilabs-backend-assesment.vercel.app/api/:path*",
+          : "https://nextjs-digilab-backend.vercel.app/:path*",
       },
     ];
   },
